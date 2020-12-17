@@ -28,6 +28,26 @@ function bubble_sort_descend($a_list) {
 }
 
 $arr = array(5, 6, 7, 1, 5, 2, 7);
-$sorted_arr = bubble_sort_ascend($arr);
-print_r($sorted_arr);
+$result = bubble_sort_ascend($arr);
+
+$arr1 = array(5, 6, 7, 1, 5, 2, 7);
+$result1 = bubble_sort_descend($arr1);
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>バブルソート</title>
+</head>
+<body>
+<h1>小さい順にソートされたアレイ</h1>
+<?php echo print_r($result); ?>
+<h1>大きい順にソートされたアレイ</h1>
+<?php echo print_r($result1); ?>
+</body>
+</html>
+
 
